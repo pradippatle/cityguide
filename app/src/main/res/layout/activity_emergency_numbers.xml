@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout1">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/apptoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageButton
+                android:id="@+id/actionbar_left_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/five_dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Important Contacts"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="@dimen/twenty_sp"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appscreensBackground"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:padding="@dimen/five_dp"
+                android:text="Govt Hospital"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:autoLink="phone"
+                android:gravity="center"
+                android:padding="@dimen/five_dp"
+                android:text="9970587364"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appscreensBackground"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:padding="@dimen/five_dp"
+                android:text="Dr. Kochhar Hospital"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:autoLink="phone"
+                android:padding="@dimen/five_dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:text="07183-232050"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appscreensBackground"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:padding="@dimen/five_dp"
+                android:text="Dr. Kodwani Hospital"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:autoLink="phone"
+                android:typeface="serif"
+                android:layout_gravity="center"
+                android:padding="@dimen/five_dp"
+                android:textColor="@color/black"
+                android:text="07183-232956"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appscreensBackground"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:padding="@dimen/five_dp"
+                android:text="Ambulance"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:autoLink="phone"
+                android:padding="@dimen/five_dp"
+                android:textColor="@color/black"
+                android:text="07183-232202"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appscreensBackground"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:padding="@dimen/five_dp"
+                android:text="Bus Stop"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:autoLink="phone"
+                android:gravity="center"
+                android:padding="@dimen/five_dp"
+                android:text="07183-232343\n07183-232288"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appscreensBackground"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:padding="@dimen/five_dp"
+                android:text="Police Station"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:autoLink="phone"
+                android:padding="@dimen/five_dp"
+                android:textColor="@color/black"
+                android:text="07183-232201"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appscreensBackground"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:padding="@dimen/five_dp"
+                android:text="Tahsil Office"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:autoLink="phone"
+                android:padding="@dimen/five_dp"
+                android:textColor="@color/black"
+                android:text="07183-232286"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appscreensBackground"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:typeface="serif"
+                android:textSize="@dimen/eight_sp"
+                android:textStyle="bold"
+                android:padding="@dimen/five_dp"
+                android:text="Mr.Charan Waghmare (MLA)"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:autoLink="phone"
+                android:typeface="serif"
+                android:padding="@dimen/five_dp"
+                android:textColor="@color/black"
+                android:text="9422131246"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/three_dp"
+                android:text="Grampanchayat Name"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twelve_sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".01"
+                android:layout_height="match_parent"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Sarpanch Name"
+                android:layout_weight="1"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:padding="@dimen/three_dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twelve_sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".01"
+                android:layout_height="match_parent"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Contact Number"
+                android:layout_weight="1"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:padding="@dimen/three_dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/twelve_sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listviewSarpanch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/ten_dp"
+        android:divider="@null"
+        android:layout_below="@+id/layout1"
+        android:paddingRight="0.1dp"/>
+
+</RelativeLayout>

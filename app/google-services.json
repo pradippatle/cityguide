@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "326909613443",
+    "firebase_url": "https://tumsar-bc45d.firebaseio.com",
+    "project_id": "tumsar-bc45d",
+    "storage_bucket": "tumsar-bc45d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326909613443:android:e7184b5fdd458a3a",
+        "android_client_info": {
+          "package_name": "com.pradipatle.cityguide.tumsar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326909613443-vmi3quugi035p282t5r7eq1t9tumlp1b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pradipatle.cityguide.tumsar",
+            "certificate_hash": "2d57b3ef697f418d5749677c2dbcb5778f886d8c"
+          }
+        },
+        {
+          "client_id": "326909613443-8opd1nfc45u2mmmffrl05g6fes7ak4lm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGVQgnrv9CoA-JIWeQ7CeeK7GyVIlSz6Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326909613443-8opd1nfc45u2mmmffrl05g6fes7ak4lm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

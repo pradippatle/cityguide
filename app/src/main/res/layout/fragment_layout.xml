@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pradipatle.cityguide.tumsar.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1.0"
+    android:background="@drawable/dashboard_bg" >
+
+
+
+    <!--  Check update Button --> 
+    <Button
+        android:id="@+id/btn_places"
+        android:typeface="serif"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_check_updates"
+        android:text="Places To Visit" />
+
+    <!--  Make order Button -->
+    <Button
+        android:id="@+id/btn_emergency"
+        style="@style/DashboardButton"
+        android:typeface="serif"
+        android:layout_marginRight="@dimen/five_dp"
+        android:drawableTop="@drawable/btn_export_data"
+        android:text="Important Contacts" />
+
+    <!--  Export data Button -->
+    <Button
+        android:id="@+id/btn_school"
+        style="@style/DashboardButton"
+        android:typeface="serif"
+        android:drawableTop="@drawable/btn_makeorder"
+        android:text="School/Colleges" />
+
+    <!--  Make payment Button --> 
+    <Button
+        android:id="@+id/btn_atm"
+        style="@style/DashboardButton"
+        android:typeface="serif"
+        android:drawableTop="@drawable/btn_make_payment"
+        android:text="Bank Locator" />
+
+
+
+</com.pradipatle.cityguide.tumsar.DashboardLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+
+    >
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Login"
+                android:textSize="25sp"
+                android:id="@+id/title_dialog_id"
+                android:padding="15dp"
+                android:gravity="center_horizontal"
+                android:background="#009688" />
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/layout_bg_below"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This app version is only for demo. We are working on it. We'll come back with all the informations. Thanks!"
+                    android:id="@+id/call_id"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:typeface="serif"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:layout_margin="10dp"
+                    android:textColor="#000000"
+                    />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:text="OK"
+                    android:typeface="serif"
+                    android:id="@+id/alert_ok_button"
+                    android:gravity="center"
+                    android:background="@drawable/stl_btn_blue"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

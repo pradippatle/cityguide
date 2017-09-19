@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryDark"
+    style="@style/ActionBarCompat" >
+
+    <ImageView
+        android:id="@+id/nav_actionlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="@dimen/five_dp"
+        android:clickable="false"
+        android:scaleType="center"
+        android:src="@drawable/ic_nav_menu" />
+
+    <ImageView
+        android:id="@+id/logout_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/five_dp"
+        android:clickable="true"
+        android:scaleType="center"
+        android:src="@drawable/logout_selector"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/loggedUser"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:shadowColor="@color/grey_shadow"
+        android:text="TUMSAR"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/nav_actionlogo"
+        android:layout_alignStart="@+id/nav_actionlogo" />
+
+</RelativeLayout>

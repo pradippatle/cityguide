@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/icon_about"
+            android:icon="@drawable/ic_about"
+            android:title="Info" />
+        <item
+            android:id="@+id/icon_weather"
+            android:icon="@drawable/ic_wb_cloudy_black"
+            android:title="Weather Condition" />
+        <item
+            android:id="@+id/icon_facebook_feeds"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Facebook Feeds" />
+
+        <item
+            android:id="@+id/nav_shareapp"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share this App" />
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_rate_review_black_24dp"
+            android:title="Feedback" />
+    </group>
+
+    <item android:title="Designed and developed by ">
+        <menu>
+            <item
+                android:id="@+id/nav_name"
+                android:title="Pradip Patle" />
+            <item
+                android:id="@+id/nav_mob"
+                android:title="+91 9021124687" />
+            <item
+                android:id="@+id/nav_email"
+                android:title="pradip_patle2009@ymail.com" />
+        </menu>
+    </item>
+
+</menu>

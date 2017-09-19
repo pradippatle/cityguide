@@ -1,0 +1,160 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">Tumsar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="change_city">Change city</string>
+    <string name="designeddevelopedby">Pradip Patle \n+91 9021124687 \npradip_patle2009@ymail.com</string>
+    <string name="email">I LOVE TUMSAR</string>
+    <string name="calender">Our Mission</string>
+    <string name="shopping">Our Vision</string>
+    <string name="social_network">Our Goal</string>
+
+    <string name="email_hint">This app is designed to acquaint you to the charming city of Tumsar. Get the detailed and up to date information about Tumsar.</string>
+    <string name="calender_hint">Our primary mission is to develop a better online system for our Tumsar that we can use everyday.</string>
+    <string name="shopping_hint">To develop a social platform to connect easily with your local friends, colleagues and family.\n ! Tumsari Katta !</string>
+    <string name="social_network_hint">To create, build &amp; available best things for our Tumsar\'s friends.</string>
+    <string name="skip">SKIP</string>
+    <!-- Put your own APP ID here -->
+    <string name="open_weather_maps_app_id">a16b617413bf12b895360151b9b95342</string>
+
+    <string name="weather_sunny">&#xf00d;</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+    <string name="schools_list">1. Lokmanya Tilak Rastriya School \n \n
+
+2. Nehru High School. \n \n
+
+3. Indutai Memorial High School / Jr.college \n \n
+
+4. Makde high school \n \n
+
+5. Malviya School (Oldest). \n \n
+
+6. R.S.G.K. Agrwal Junior College. \n \n
+
+7. Sharda Vidyalaya / Girls Jr. College Bajaj Nagar Tumsar. \n \n
+
+8. Kasturba Girls High School. \n \n
+
+9. Nikhade Primary School. \n \n
+
+10. Dhangare Primary School. \n \n
+
+11. Maharshi Vidya Mandir. \n \n
+
+12. S,N.School \n \n
+
+13. Janta High School. \n \n
+
+14. Primary School Shahar Vibhag. \n \n
+
+15. Shirinbai Neterwala School, Madgi. \n \n
+
+16. Govt Technical High school. \n \n
+
+17. U.S.A. Vidhaya Niketan School. \n \n
+
+18. Progressive English Medium High \n\n</string>
+
+    <string name="place_not_found">Sorry, no weather data found.</string>
+
+    <string name="sign_in_no_password_title">Put an email to use for sign in</string>
+    <string name="button_ok_text">OK</string>
+    <string name="password_hint">Password</string>
+    <string name="button_singin_text">Sign In</string>
+    <string name="button_password_recovery_text">Trouble remembering your password</string>
+    <string name="name_hint">First &amp; last name</string>
+    <string name="password_recovery_title">Forgot password</string>
+    <string name="password_recovery_body">Get instructions sent to this email that explain how to
+        reset your password.</string>
+    <string name="create_account_title">Create account</string>
+    <string name="required_field">You can\'t leave this empty.</string>
+    <string name="password_length">Strong passwords have at least %1$d characters and a mix of letters
+        and numbers</string>
+    <string name="invalid_email_address">That email address isn\'t correct</string>
+    <string name="missing_email_address">Enter your email address to continue</string>
+    <string name="button_text_next">Next</string>
+    <string name="button_text_send">Send</string>
+    <string name="button_text_save">Save</string>
+    <string name="button_text_sign_in">Sign in</string>
+    <string name="require_email_text">Please input email address</string>
+    <string name="confirm_recovery_body">Follow the instructions sent to %1$s to recover your
+        password.</string>
+    <string name="recovery_fail_body">That email address doesn\'t match an existing account</string>
+    <string name="account_welcomeback">Welcome back</string>
+    <string name="finding_credential">Finding a credential…</string>
+    <string name="do_delete">Delete</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="next">Next</string>
+    <string name="trouble_signing_in">Trouble signing in?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_in_title">Sign in</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="button_done">Done</string>
+    <string name="check_your_email">Check your email</string>
+    <string name="recover_password_title">Recover password</string>
+    <string name="welcome_back_idp_header">You already have an account</string>
+    <string name="welcome_back_idp_prompt">
+        You\'ve already used <xliff:g id="email_addr" example="jane.doe@example.com">%1$s</xliff:g>.
+        Sign in with <xliff:g id="provider_name" example="Google">%2$s</xliff:g> to continue.
+    </string>
+    <string name="welcome_back_idp_button">Sign in</string>
+    <string name="welcome_back_password_prompt_body">You\'ve already used
+        <xliff:g id="email_addr" example="jane.doe@example.com">%1$s</xliff:g> to sign in. Enter
+        your password for that account.</string>
+    <string name="password_word">Password</string>
+    <string name="idp_name_google">Google</string>
+    <string name="idp_name_facebook">Facebook</string>
+    <string name="create_account_preamble">"By tapping SAVE you are indicating that you agree to the"</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="sign_in_with_email">Sign in with email</string>
+    <string name="login_error">Login unsuccessful</string>
+    <string name="email_account_creation_error">Email account registration unsuccessful</string>
+    <string name="missing_password_email_toast">Missing password or email</string>
+    <string name="progress_dialog_loading">Loading…</string>
+    <string name="progress_dialog_sending">Sending…</string>
+    <string name="progress_dialog_signing_in">Signing in…</string>
+    <string name="progress_dialog_signing_up">Signing up…</string>
+
+
+    <string name="about_tumsar_text"><b>Tumsar</b> is a town and taluka in the <b>Bhandara</b> district in the state of <b>Maharashtra</b> in central India.\nThe city\'s name comes from a fish <b>\'tum\'</b> that was discovered in the area.
+\nTumsar is also known as <b>Rice Nagri</b>, and was previously known as <b>Kuber Nagari</b>.\n\nThe main language in Tumsar is <b>Marathi</b>.
+\Tumsar celebrates several main festivals. These are Kanuba, Kanhaiya Pujan, Durga Pujan, Ganpati Utsav, Pola (Marbat), Dasara, Diwali, and Budhha Jayanti.
+Tumsar also began celebrating ShobhaYatra in 2005. In the era immediately after Independence, the Gandhi Jayanthi Saptah was also celebrated and Bangali Kali Puja by Bangali Samiti Tumsar. During the Kanuba and Rakshabandhan festival, which takes place during the holy Shrawana month, bhujli is exchanged as a mark of respect and love.
+\n\nTumsar is approximately 6 km from the <b>Wainganga River</b>, 30 km from Bhandara, 95 km From Nagpur, 65 km from Gondia and 300 km from Jabalpur (Madhya Pradesh). It is 700 km from Bhopal, 920 km from Delhi, 1000 km from Kolkata and 980 km from Mumbai and Indore.
+\n\nTumsar Town railway station is on the Tirodi Line. The main railway station,<b> Tumsar Road</b>, is 5 km away from the town on the Howrah-Nagpur-Mumbai line.
+In the 2011 census, the town of <b>Tumsar had a population of 42,021 people in 8,462 households</b>.<b>The population of the whole taluka was 213,843 people in 44,191 households</b></string>
+
+    <string name="preference_facebook_response">DARLING_fb</string>
+    <string name="preference_facebook_reg_status">DARLING_fb_reg_status</string>
+    <string name="str_facebookphoto_loadbutton">Next</string>
+    <string name="str_custom_edithint">Your Comments</string>
+    <string name="str_custom_cancel">Cancel</string>
+    <string name="str_custom_share">Share on</string>
+    <string name="str_facebook_albumheader">Facebook Albums</string>
+    <string name="str_facebook_getalbum">Browsing images</string>
+    <string name="str_sharing_point">You have earned</string>
+    <string name="str_custom_logo">Darling Logo</string>
+    <string name="str_facebook_registrationissue">There was an issue in registration</string>
+    <string name="facebook_app_id">298295400608980</string> //https://developers.facebook.com/apps/298295400608980/dashboard/
+    <string name="fb_login_protocol_scheme">fb298295400608980</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAG3K2UPK1-jIxJDO78jNSKdqVqLil9DFc</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7240646173515438/5028992105</string>
+
+
+    <string name="place1Gaimukh"><b>1) Gaymookh</b>\nGaymookh is a place of worship for devotees of Lord Shiva worship, also known as <b>Chhota Mahadeo</b> in the eastern Vidarbha region. There is also a big Holi Jatra during <b>Mahashivratri</b> festival. Gaymookh is 18 km from Tumsar.</string>
+    <string name="place2Fort"><b>2) Ambagarh fort</b>\nAmbagarh Fort, one of the historic sites of the destination, was believed to be constructed around 17th century by Raja Khan Pathan, the subhedar of Bakht Buland Shah. Bakht Buland Shah was the ruler of Devgadh and one of the tribal kings belonging to Gond tribe. The fort has witnessed many wars after which it came under the possession of Raja Raghuji Bhosla, a king of Nagpur, who later used it as prison for slaves. Later, the fort was won by the Britishers, who ruled it until India got independence. It is believed that when the prisoners were sent to the fort, they were forced to drink the water of the inner well, which is contaminated by poison. A prisoner named Kadu Patel of Mohali died in the premises of the fort, which revealed that the water of the well is poisonous. Kadu Patel was imprisoned for commencing the crime related to sorcery, and after his death, he was worshipped by the natives of the region, especially Koshtis. The main entrance of the fort still stands in the eastward direction while other parts of the building remain in ruins. Tourists can also witness another tank located outside the fort, which acts as a prime source for fulfilling water requirements of the villagers.</string>
+    <string name="place3Chandpur"><b>3) Chandpur</b>\nChandpur is place as a gift of nature surrounded by hills of Satpura Range and Jungle. <b>Chandpur Dam</b>, is an earthfill dam on Chandpur river near Tumsar in State of Maharashtra in India.The height of the dam above lowest foundation is 19 m (62 ft) while the length is 1,051 m (3,448 ft). The volume content is 80.36 km3 (19.28 cu mi) and gross storage capacity is 29,025.00 km3 (6,963.47 cu mi).Chandpur is famous for Awakened Lord Hanuman Temple situated on the hill. The Hanuman Statue is 8 feet in height which is self originated. People come here to get peace of mind.Chandpur is 21 km from Tumsar and 120 km from Nagpur.</string>
+    <string name="place4Madgi"><b>4) Madgi</b>\nMadgi is another a place of worship for devotees of Narasimha a Lord Vishnu\'s avatar, the temple situated on the big rock in the middle of Wainganga river.Madgi is just 8 km from Tumsar and 105 km from Nagpur.</string>
+    <string name="viewmore"><u>View More Places</u></string>
+</resources>
