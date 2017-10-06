@@ -2,15 +2,15 @@
 <resources>
 
     <array name="landing_bg">
-        <item>@color/light_orange</item>
-        <item>@color/light_blue</item>
-        <item>@color/light_green</item>
-        <item>@color/light_red</item>
+        <item>@color/bg_gradient_end</item>
+        <item>@color/bg_gradient_end</item>
+        <item>@color/bg_gradient_end</item>
+        <item>@color/bg_gradient_end</item>
 
     </array>
 
     <array name="icons">
-        <item>@drawable/splash1</item>
+        <item>@drawable/diwali2</item>
         <item>@drawable/calendar</item>
         <item>@drawable/socialnetwork</item>
         <item>@drawable/shopping</item>
@@ -18,20 +18,19 @@
     </array>
 
     <string-array name="titles" >
-
-        <item>@string/email</item>
-        <item>@string/calender</item>
-        <item>@string/shopping</item>
-        <item>@string/social_network</item>
+        <item>@string/header1</item>
+        <item>@string/header2</item>
+        <item>@string/header3</item>
+        <item>@string/header4</item>
 
     </string-array>
 
     <string-array name="hints" >
 
-        <item>@string/email_hint</item>
-        <item>@string/calender_hint</item>
-        <item>@string/shopping_hint</item>
-        <item>@string/social_network_hint</item>
+        <item>@string/body1</item>
+        <item>@string/body2</item>
+        <item>@string/body3</item>
+        <item>@string/body4</item>
 
     </string-array>
 </resources>

@@ -33,6 +33,7 @@ import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 import com.pradipatle.cityguide.tumsar.AppConstants.Constant;
+import com.pradipatle.cityguide.tumsar.Chat.ChatActivity;
 import com.pradipatle.cityguide.tumsar.Common.CommonMethods;
 
 public class HomeScreenActivity extends AppCompatActivity
@@ -46,7 +47,7 @@ public class HomeScreenActivity extends AppCompatActivity
     private DisplayImageOptions options;
     SharedPreferences sharedpreferences;
     SharedPreferences.Editor editor;
-    private LinearLayout MenuNews, MenuGovSchemes, MenuFarmersHelp, MenuBusTime;
+    private LinearLayout MenuChat, MenuGovSchemes, MenuFarmersHelp, MenuBusTime;
     public static final String MyPREFERENCES = "MyPrefs";
     public static final String Name = "nameKey";
     public static final String ProfilePicUrl = "profilePicUrl";
@@ -73,7 +74,7 @@ public class HomeScreenActivity extends AppCompatActivity
         ATM = (Button) findViewById(R.id.btn_atm);
         LogoutApp = (ImageView) findViewById(R.id.logout_iv);
         nav_actionlogo = (ImageView) findViewById(R.id.nav_actionlogo);
-        MenuNews = (LinearLayout) findViewById(R.id.id_news_menu);
+        MenuChat = (LinearLayout) findViewById(R.id.id_chat);
         MenuGovSchemes = (LinearLayout) findViewById(R.id.id_gov_scheme);
         MenuFarmersHelp = (LinearLayout) findViewById(R.id.ic_farmershelp);
         MenuBusTime = (LinearLayout)findViewById(R.id.id_bus_menu);
@@ -191,6 +192,13 @@ public class HomeScreenActivity extends AppCompatActivity
                         startActivity(newIntent);
                     } else {
                         CommonMethods.DisplayToastLengthLong(HomeScreenActivity.this,"This feature requires Facebook Login. Please login with facebook");
+                        LoginManager.getInstance().logOut();
+                        editor = sharedpreferences.edit();
+                        editor.putString(isLoggedIn, "no");
+                        editor.apply();
+                        Intent intent = new Intent(HomeScreenActivity.this, ActivitySliderScreen.class);
+                        startActivity(intent);
+                        finish();
                     }
                 } else {
                     CommonMethods.DisplayToastLengthLong(HomeScreenActivity.this,"This feature requires Facebook Login. Please login with facebook");
@@ -208,6 +216,13 @@ public class HomeScreenActivity extends AppCompatActivity
                         startActivity(newIntent);
                     } else {
                         CommonMethods.DisplayToastLengthLong(HomeScreenActivity.this,"This feature requires Facebook Login. Please login with facebook");
+                        LoginManager.getInstance().logOut();
+                        editor = sharedpreferences.edit();
+                        editor.putString(isLoggedIn, "no");
+                        editor.apply();
+                        Intent intent = new Intent(HomeScreenActivity.this, ActivitySliderScreen.class);
+                        startActivity(intent);
+                        finish();
                     }
                 } else {
                     CommonMethods.DisplayToastLengthLong(HomeScreenActivity.this,"This feature requires Facebook Login. Please login with facebook");
@@ -215,20 +230,11 @@ public class HomeScreenActivity extends AppCompatActivity
             }
         });
 
-        MenuNews.setOnClickListener(new View.OnClickListener() {
+        MenuChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (loginStatus != null) {
-                    if (loginStatus.equalsIgnoreCase("yes")) {
-                        Intent newIntent = new Intent(HomeScreenActivity.this, ActivityFacebookFeeds.class);
-                        newIntent.putExtra("page","NEWS");
+                        Intent newIntent = new Intent(HomeScreenActivity.this, ChatActivity.class);
                         startActivity(newIntent);
-                    } else {
-                        CommonMethods.DisplayToastLengthLong(HomeScreenActivity.this,"This feature requires Facebook Login. Please login with facebook");
-                    }
-                } else {
-                    CommonMethods.DisplayToastLengthLong(HomeScreenActivity.this,"This feature requires Facebook Login. Please login with facebook");
-                }
             }
         });
 
@@ -304,7 +310,7 @@ public class HomeScreenActivity extends AppCompatActivity
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(facebookId)));
             } catch (Exception e) {
                 CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-                builder.setToolbarColor(Color.GREEN);
+                builder.setToolbarColor(getResources().getColor(R.color.colorPrimaryDark));
                 CustomTabsIntent customTabsIntent = builder.build();
                 customTabsIntent.launchUrl(HomeScreenActivity.this, Uri.parse(urlPage));
             }

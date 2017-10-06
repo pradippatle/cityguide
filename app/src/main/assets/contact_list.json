@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "name": "Govt Hospital",
+      "number": "9970587364"
+    },
+    {
+      "name": "Dr. Kochhar Hospital",
+      "number": "07183-232050"
+    },
+    {
+      "name": "Dr. Kodwani Hospital",
+      "number": "07183-232956"
+    },
+    {
+      "name": "Ambulance",
+      "number": "07183-232202"
+    },
+    {
+      "name": "Bus Stop",
+      "number": "07183-232343\n07183-232288"
+    },
+    {
+      "name": "Police Station",
+      "number": "07183-232201"
+    },
+    {
+      "name": "Tahsil Office",
+      "number": "07183-232286"
+    },
+    {
+      "name": "Mr.Charan Waghmare (MLA)",
+      "number": "9422131246"
+    }
+  ]
+}

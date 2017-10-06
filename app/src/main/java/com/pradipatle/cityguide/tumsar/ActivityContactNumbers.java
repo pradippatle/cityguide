@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import com.pradipatle.cityguide.tumsar.Adapter.SarpanchListAdapter;
-import com.pradipatle.cityguide.tumsar.model.SarpanchTahsildarModel;
+import com.pradipatle.cityguide.tumsar.Adapter.contactListAdapter;
+import com.pradipatle.cityguide.tumsar.model.ModelContacts;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -23,15 +23,15 @@ import java.util.ArrayList;
  */
 public class ActivityContactNumbers extends Activity{
     private String jsonResponse = null;
-    private ArrayList<SarpanchTahsildarModel> sarpanchTahsildarList;
-    private SarpanchListAdapter sarpanchTahsildarAdapter;
-    private ListView listview;
+    private ArrayList<ModelContacts> contactsArrayList;
+    private contactListAdapter contactsAdapter;
+    private ListView contactsListview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency_numbers);
-        listview= (ListView)findViewById(R.id.listviewSarpanch);
-        sarpanchTahsildarList = new ArrayList<>();
+        contactsListview = (ListView)findViewById(R.id.listviewContacts);
+        contactsArrayList = new ArrayList<>();
         loadJSONFromAsset();
 
         ImageView actionbar_left_icon =  (ImageView) findViewById(R.id.actionbar_left_icon);
@@ -47,7 +47,7 @@ public class ActivityContactNumbers extends Activity{
     private String loadJSONFromAsset() {
         try {
 
-            InputStream is = getAssets().open("sarpanch_list.json");
+            InputStream is = getAssets().open("contact_list.json");
 
             int size = is.available();
 
@@ -64,21 +64,18 @@ public class ActivityContactNumbers extends Activity{
                 jsonObj = new JSONObject(jsonResponse);
                 JSONArray dataArray = jsonObj.getJSONArray("data");
                 for (int i = 0; i < dataArray.length(); i++) {
-                    SarpanchTahsildarModel mr = new SarpanchTahsildarModel();
+                    ModelContacts mr = new ModelContacts();
                     JSONObject jsonObject = dataArray.getJSONObject(i);
-                    String title = jsonObject.getString("village");
-                    String description = jsonObject.getString("name");
-                    String weblink = jsonObject.getString("mobile");
-
-                    mr.village = title;
-                    mr.name = description;
-                    mr.mobile = weblink;
-                    sarpanchTahsildarList.add(mr);
+                    String name = jsonObject.getString("name");
+                    String number = jsonObject.getString("number");
+                    mr.mobile = number;
+                    mr.name = name;
+                    contactsArrayList.add(mr);
                 }
 
-                if (sarpanchTahsildarList.size() > 0) {
-                    sarpanchTahsildarAdapter = new SarpanchListAdapter(sarpanchTahsildarList, ActivityContactNumbers.this);
-                    listview.setAdapter(sarpanchTahsildarAdapter);
+                if (contactsArrayList.size() > 0) {
+                    contactsAdapter = new contactListAdapter(contactsArrayList, ActivityContactNumbers.this);
+                    contactsListview.setAdapter(contactsAdapter);
                 }
             } catch (JSONException e) {
                 e.printStackTrace();

@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:text="Skip Login"
         android:gravity="center"
-        android:padding="@dimen/ten_dp"
+        android:padding="@dimen/seven_dp"
         android:textColor="@color/white"
         android:background="@color/colorPrimaryDark"
         android:layout_above="@+id/indicator"

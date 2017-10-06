@@ -15,21 +15,29 @@
       },
       "oauth_client": [
         {
+          "client_id": "326909613443-3ti1a022m3ckceqf6ihsgrsdsf8lv0vo.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "326909613443-240esctuu28k8p4ft1l1qedg6l2fruhk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pradipatle.cityguide.tumsar",
+            "certificate_hash": "712113fd3950345095869ab0648e12d9e264d4be"
+          }
+        },
+        {
           "client_id": "326909613443-vmi3quugi035p282t5r7eq1t9tumlp1b.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.pradipatle.cityguide.tumsar",
             "certificate_hash": "2d57b3ef697f418d5749677c2dbcb5778f886d8c"
           }
-        },
-        {
-          "client_id": "326909613443-8opd1nfc45u2mmmffrl05g6fes7ak4lm.apps.googleusercontent.com",
-          "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDGVQgnrv9CoA-JIWeQ7CeeK7GyVIlSz6Q"
+          "current_key": "AIzaSyC1IC_7lcE9wzUXpgAOH3ML4Ia3YHfYu5A"
         }
       ],
       "services": {
@@ -40,7 +48,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "326909613443-8opd1nfc45u2mmmffrl05g6fes7ak4lm.apps.googleusercontent.com",
+              "client_id": "326909613443-3ti1a022m3ckceqf6ihsgrsdsf8lv0vo.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -28,7 +28,8 @@
             android:gravity="center"
             android:text=""
             android:layout_marginTop="40dp"
-            android:textColor="@android:color/white"
+            android:textColor="#AEEA00"
+            android:shadowColor="#827717"
             android:textSize="22sp"
             android:textStyle="bold" />
 
@@ -41,7 +42,7 @@
             android:text=""
             android:layout_marginTop="20dp"
             android:textSize="18sp"
-            android:textColor="@android:color/white" />
+            android:textColor="@color/white" />
     </LinearLayout>
 
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#009688</color>
-    <color name="colorPrimaryDark">#004D40</color>
-    <color name="colorAccent">#80CBC4</color>
-    <color name="appscreensBackground">#C5CAE9</color>
+    <color name="colorPrimary">#37474F</color>
+    <color name="colorPrimaryDark">#263238</color>
+    <color name="colorAccent">#90A4AE</color>
+    <color name="appscreensBackground">#ECEFF1</color>
 
     <color name="white">#ffffffff</color>
     <color name="black">#ff000000</color>
@@ -18,7 +18,7 @@
     <color name="green">#ff46b525</color>
     <color name="red">#ffd94539</color>
     <color name="bg_gradient_start">#b21331</color>
-    <color name="bg_gradient_end">#820d2a</color>
+    <color name="bg_gradient_end">#880E4F</color>
     <color name="bg_button_login_default">#191f41</color>
     <color name="bg_button_login_pressed">#3f5787</color>
 
