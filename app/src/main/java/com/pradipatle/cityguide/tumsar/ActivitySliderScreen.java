@@ -82,12 +82,33 @@ public class ActivitySliderScreen extends AppCompatActivity {
         skipLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editor = sharedpreferences.edit();
-                editor.putString(isLoggedIn, "skip");
-                editor.apply();
-                Intent intent = new Intent(ActivitySliderScreen.this, HomeScreenActivity.class);
-                startActivity(intent);
-                finish();
+                final Dialog dialog = new Dialog(ActivitySliderScreen.this, R.style.CustomDialogTheme);
+                LayoutInflater layoutInflater = LayoutInflater.from(ActivitySliderScreen.this);
+                View vv = layoutInflater.inflate(R.layout.dialog_login, null);
+                dialog.getWindow().setBackgroundDrawableResource((android.R.color.transparent));
+                dialog.setContentView(vv);
+                dialog.setCanceledOnTouchOutside(true);
+                final EditText password_field = (EditText) vv.findViewById(R.id.password_edt);
+                vv.findViewById(R.id.alert_ok_button).setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //    String password = password_field.getText().toString();
+                        if (password_field.getText().toString().trim().equalsIgnoreCase("441912")) {
+                            editor = sharedpreferences.edit();
+                            editor.putString(isLoggedIn, "skip");
+                            editor.apply();
+                            Intent intent = new Intent(ActivitySliderScreen.this, HomeScreenActivity.class);
+                            startActivity(intent);
+                            finish();
+                            dialog.dismiss();
+                        } else {
+                            Toast.makeText(ActivitySliderScreen.this, "Please enter valid 6 digit Pin code", Toast.LENGTH_LONG).show();
+                            password_field.setText("");
+                        }
+                    }
+                });
+                dialog.show();
+
             }
         });
 
@@ -162,14 +183,14 @@ public class ActivitySliderScreen extends AppCompatActivity {
                             Intent intent = new Intent(ActivitySliderScreen.this, HomeScreenActivity.class);
                             startActivity(intent);
                             finish();
+                            dialog.dismiss();
                         } else {
-                            Toast.makeText(ActivitySliderScreen.this, "Please enter correct password", Toast.LENGTH_LONG).show();
+                            Toast.makeText(ActivitySliderScreen.this, "Please enter valid 6 digit Pin code", Toast.LENGTH_LONG).show();
+                            password_field.setText("");
                         }
-                        dialog.dismiss();
                     }
                 });
                 dialog.show();
-
             }
 
             @Override

@@ -38,7 +38,7 @@
         style="@style/DashboardButton"
         android:typeface="serif"
         android:drawableTop="@drawable/btn_make_payment"
-        android:text="Bank Locator" />
+        android:text="Locate on Map" />
 
 
 

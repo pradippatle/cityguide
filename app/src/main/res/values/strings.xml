@@ -157,7 +157,7 @@ In the 2011 census, the town of <b>Tumsar had a population of 42,021 people in 8
     <string name="place3Chandpur"><b>3) Chandpur</b>\nChandpur is place as a gift of nature surrounded by hills of Satpura Range and Jungle. <b>Chandpur Dam</b>, is an earthfill dam on Chandpur river near Tumsar in State of Maharashtra in India.The height of the dam above lowest foundation is 19 m (62 ft) while the length is 1,051 m (3,448 ft). The volume content is 80.36 km3 (19.28 cu mi) and gross storage capacity is 29,025.00 km3 (6,963.47 cu mi).Chandpur is famous for Awakened Lord Hanuman Temple situated on the hill. The Hanuman Statue is 8 feet in height which is self originated. People come here to get peace of mind.Chandpur is 21 km from Tumsar and 120 km from Nagpur.</string>
     <string name="place4Madgi"><b>4) Madgi</b>\nMadgi is another a place of worship for devotees of Narasimha a Lord Vishnu\'s avatar, the temple situated on the big rock in the middle of Wainganga river.Madgi is just 8 km from Tumsar and 105 km from Nagpur.</string>
     <string name="viewmore"><u>View More Places</u></string>
-
+    <string name="viewmap"><u>Click here to view Map</u></string>
     <string name="welcome_msg">Welcome!</string>
     <string name="sign_out">Sign Out</string>
     <string name="contacts_permission_rationale">Access to account information is required to sign in.</string>

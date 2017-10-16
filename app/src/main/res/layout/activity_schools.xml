@@ -65,6 +65,14 @@
                 android:typeface="serif" />
 
 
+            <TextView
+                android:id="@+id/viewSchools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/viewmap"
+                android:padding="@dimen/ten_dp"
+                android:layout_marginLeft="@dimen/fifteen_dp"
+                android:textColor="@color/link"/>
         </LinearLayout>
     </ScrollView>
 

@@ -18,7 +18,7 @@
     <color name="green">#ff46b525</color>
     <color name="red">#ffd94539</color>
     <color name="bg_gradient_start">#b21331</color>
-    <color name="bg_gradient_end">#880E4F</color>
+    <color name="bg_gradient_end">#009688</color>
     <color name="bg_button_login_default">#191f41</color>
     <color name="bg_button_login_pressed">#3f5787</color>
 

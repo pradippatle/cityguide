@@ -20,7 +20,7 @@ public class ActivityPlacesToVisit extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.places);
+        setContentView(R.layout.activity_places_to_visit);
         ImageView actionbar_left_icon =  (ImageView) findViewById(R.id.actionbar_left_icon);
         actionbar_left_icon.setOnClickListener(new View.OnClickListener() {
             @Override

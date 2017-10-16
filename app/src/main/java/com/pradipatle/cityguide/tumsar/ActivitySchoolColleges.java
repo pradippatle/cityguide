@@ -1,11 +1,12 @@
 package com.pradipatle.cityguide.tumsar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -14,11 +15,11 @@ import com.google.android.gms.ads.MobileAds;
 /**
  * Created by Aeon admin on 14-Jul-16.
  */
-public class ActivitySchoolsCollege extends AppCompatActivity  {
+public class ActivitySchoolColleges extends AppCompatActivity  {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.schools);
+        setContentView(R.layout.activity_schools);
 
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-7240646173515438/5028992105");
         AdView mAdView = (AdView) findViewById(R.id.adView);
@@ -31,5 +32,16 @@ public class ActivitySchoolsCollege extends AppCompatActivity  {
                 finish();
             }
         });
+
+        TextView viewMorePlaces = (TextView)findViewById(R.id.viewSchools);
+        viewMorePlaces.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivitySchoolColleges.this, ActivityMaps.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 }

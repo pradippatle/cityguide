@@ -2,8 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <fragment
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
@@ -32,23 +31,182 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/fifteen_dp"
                 android:gravity="center"
-                android:text="Nearest Bank / ATM"
+                android:text="Nearby Locator"
                 android:textColor="@color/white"
                 android:textSize="@dimen/twenty_sp" />
 
         </android.support.v7.widget.Toolbar>
 
-
-        <Button
-            android:id="@+id/btnBanks"
+        <TextView
+            android:id="@+id/addressText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Click here to View Nearest Banks"
-            android:background="@color/colorPrimary"
-            android:textColor="#FFFFFF"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom"/>
-    </RelativeLayout>
+            android:layout_below="@+id/apptoolbar"
+            android:background="#80444444"
+            android:padding="@dimen/ten_dp"
+            android:textColor="@color/white"
+            android:visibility="gone" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80444444"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:id="@+id/id_Hospitals_menu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:background="@null"
+                        android:src="@drawable/ic_local_hospital" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:layout_marginTop="@dimen/three_dp"
+                        android:gravity="center"
+                        android:text="Hospital"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/eleven_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/id_restaaurant_menu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:background="@null"
+                        android:src="@drawable/ic_restaurant" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:layout_marginTop="@dimen/one_dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Restaurant"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/eleven_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuBanks"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:background="@null"
+                        android:src="@drawable/ic_atm_machine" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:layout_marginTop="@dimen/three_dp"
+                        android:gravity="center"
+                        android:text="Banks/ATM's"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/eleven_sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/id_schools_menu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:background="@null"
+                        android:src="@drawable/ic_school" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:gravity="center"
+                        android:text="Schools"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/eleven_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/id_other_menu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/ten_dp"
+                        android:background="@null"
+                        android:src="@drawable/ic_farmers_help" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/five_dp"
+                        android:layout_marginTop="@dimen/five_dp"
+                        android:gravity="center"
+                        android:text="Other"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/eleven_sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
 </FrameLayout>

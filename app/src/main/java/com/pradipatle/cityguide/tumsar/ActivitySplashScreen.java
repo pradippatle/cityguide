@@ -103,8 +103,6 @@ public class ActivitySplashScreen extends AwesomeSplash {
             }
         };
 }
-
-
     // Fetches reg id from shared preferences
     // and displays on the screen
     private void displayFirebaseRegId() {
@@ -112,7 +110,6 @@ public class ActivitySplashScreen extends AwesomeSplash {
         String regId = pref.getString("regId", null);
 
         Log.e(TAG, "Firebase reg id: " + regId);
-
     }
 
     @Override

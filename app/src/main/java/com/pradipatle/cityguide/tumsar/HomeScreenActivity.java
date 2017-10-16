@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.customtabs.CustomTabsIntent;
@@ -146,7 +145,7 @@ public class HomeScreenActivity extends AppCompatActivity
         SchoolCollege.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeScreenActivity.this, ActivitySchoolsCollege.class);
+                Intent intent = new Intent(HomeScreenActivity.this, ActivitySchoolColleges.class);
                 startActivity(intent);
             }
         });

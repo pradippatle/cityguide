@@ -9,7 +9,6 @@
 
     <include layout="@layout/fragment_layout" />
 
-
     <!-- Include Fragmented dashboard -->
 
     <LinearLayout
@@ -145,8 +144,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
-
     </LinearLayout>
 
 </LinearLayout>

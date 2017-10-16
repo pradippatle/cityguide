@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="#FFFF"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Login"
+                android:text="Tumsar - My City"
                 android:typeface="serif"
                 android:textSize="25sp"
                 android:id="@+id/title_dialog_id"
@@ -39,8 +39,18 @@
                 android:background="@drawable/layout_bg_below"
                 android:gravity="center">
 
-                <EditText
+                <TextView
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/eighteen_sp"
+                    android:layout_margin="@dimen/fifteen_dp"
+                    android:text="Please provide 6 digit Pin Code for accessing this app."/>
+
+                <EditText
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/password_edt"
                     android:gravity="center"
@@ -48,15 +58,16 @@
                     android:layout_weight="1"
                     android:typeface="serif"
                     android:textSize="15sp"
-                    android:hint="Please provide the password for accessing app."
-                    android:layout_margin="20dp"
-                    android:textColor="#000000"
-                    />
+                    android:maxLength="6"
+                    android:inputType="number"
+                    android:hint="Enter Pin Code "
+                    android:layout_margin="@dimen/five_dp"
+                    android:textColor="@color/black" />
 
                 <Button
                     style="?android:attr/buttonStyleSmall"
-                    android:layout_width="90dp"
-                    android:layout_height="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/thirtyfive_dp"
                     android:text="SUBMIT"
                     android:typeface="serif"
                     android:id="@+id/alert_ok_button"
@@ -64,8 +75,10 @@
                     android:background="@drawable/stl_btn_blue"
                     android:textColor="@android:color/white"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    />
+                    android:layout_marginLeft="@dimen/thirtyfive_dp"
+                    android:layout_marginRight="@dimen/thirtyfive_dp"
+                    android:layout_marginTop="@dimen/five_dp"
+                    android:layout_marginBottom="@dimen/ten_dp" />
 
 
             </LinearLayout>

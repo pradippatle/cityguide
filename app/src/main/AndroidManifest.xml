@@ -60,7 +60,7 @@
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.pradipatle.cityguide.tumsar.ActivitySchoolsCollege"
+            android:name="com.pradipatle.cityguide.tumsar.ActivitySchoolColleges"
             android:screenOrientation="portrait" />
 
         <activity
